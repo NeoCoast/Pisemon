@@ -13,8 +13,51 @@
   justify-content: center;
 }
 
-.App-content{
+.App-content {
   align-items: center;
+  flex-direction: column;
   display: flex;
   justify-content: center;
+}
+
+.content-selector {
+  display: flex;
+  width: 450px;
+}
+
+.selector-input {
+  width: 170px;
+}
+
+.content-controllers {
+  width: 452px;
+  display: flex;
+  margin: 30px 0px 30px 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.rotated-img {
+  transform: rotate(180deg);
+  margin-right: 5px;
+}
+
+.content-buttons {
+  min-width: 70px;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
 }

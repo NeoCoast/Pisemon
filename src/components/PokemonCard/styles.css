@@ -1,4 +1,5 @@
 .PokemonCard {
+  min-width: 450px;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -8,11 +9,11 @@
   border-radius: 20px 0 20px 0;
 }
 
-.PokemonCard-left{
+.PokemonCard-left {
   text-align: left;
   padding: 15px;
 }
 
-.PokemonCard-image{
+.PokemonCard-image {
   padding: 15px;
 }
