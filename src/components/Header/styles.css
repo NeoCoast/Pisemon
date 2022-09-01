@@ -1,0 +1,15 @@
+.Header {
+  background-color: #201522;
+  display: flex;
+}
+
+.Header-header {
+  color: white;
+  font-size: 50px;
+}
+
+.Header-image {
+  margin: 12px;
+  padding: 15px;
+  cursor: pointer;
+}

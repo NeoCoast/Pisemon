@@ -8,7 +8,7 @@ import arrow from '../../assets/arrow.png';
 
 import './styles.css';
 
-const Pisemon = () => {
+const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [pokemonList, setPokemonList] = useState([]);
   const [pageNumber, setPageNumber] = useState(0);
@@ -41,7 +41,7 @@ const Pisemon = () => {
         });
       }
     } catch (error) {
-      window.alert('Error al obtener la lista de pokemons');
+      window.alert('Error al obtener la lista de pokemon');
     }
 
     setIsLoading(false);
@@ -53,11 +53,6 @@ const Pisemon = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>
-          Bienvenidos a Pisemon
-        </h2>
-      </header>
       <div className="App-content">
         <div className="content-controllers">
           <div className="content-selector">
@@ -72,13 +67,13 @@ const Pisemon = () => {
           <div className="content-pages">
             { pageNumber > 0 && (
               <button className="content-buttons" onClick={() => getPokemonList(pageNumber - 1)} type="button">
-                <img src={arrow} className="rotated-img" alt="Arrow" width={20} />
+                <img src={arrow} className="rotated-img" alt="Arrow" height={20} width={20} />
                 previous
               </button>
             )}
             <button className="content-buttons" onClick={() => getPokemonList(pageNumber + 1)} type="button">
               next
-              <img src={arrow} alt="Arrow" width={20} />
+              <img className="arrow" src={arrow} alt="Arrow" width={20} />
             </button>
           </div>
         </div>
@@ -99,4 +94,4 @@ const Pisemon = () => {
   );
 };
 
-export default Pisemon;
+export default Home;

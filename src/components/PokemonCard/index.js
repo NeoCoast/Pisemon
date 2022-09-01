@@ -1,5 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 import './styles.css';
 
@@ -10,9 +11,15 @@ const PokemonCard = ({
   image,
 }) => {
   const [type1, type2 = ''] = types;
+  const navigate = useNavigate();
 
   return (
-    <div className="PokemonCard">
+    <div
+      aria-hidden="true"
+      className="PokemonCard"
+      onClick={() => navigate(`/pokemon/${id}`)}
+      type="button"
+    >
       <div className="PokemonCard-left">
         <p>
           ID: {id}

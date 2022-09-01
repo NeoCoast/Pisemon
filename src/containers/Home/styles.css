@@ -1,9 +1,10 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: gray;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
 }
 
 .App-header {
@@ -41,6 +42,10 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.arrow {
+  cursor: pointer;
 }
 
 .rotated-img {

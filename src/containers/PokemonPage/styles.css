@@ -1,0 +1,35 @@
+.PokemonPage {
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  min-height: 100vh;
+  min-width: 100%;
+  padding-top: 50px;
+}
+
+.PokemonPage-row-container {
+  width: 100%;
+}
+
+.PokemonPage-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PokemonPage-img-container {
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PokemonPage-rotated-img {
+  transform: rotate(180deg);
+}
