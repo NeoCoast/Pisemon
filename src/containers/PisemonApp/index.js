@@ -1,6 +1,6 @@
-import './App.css';
-import PokemonCard from './components/PokemonCard';
-import PokemonList from './components/PokemonList';
+import PokemonList from '../../components/PokemonList';
+
+import './styles.css';
 
 const PIKACHU = {
   name: 'Pikachu',
@@ -21,7 +21,7 @@ const RAICHU = {
 }
 
 const POKEMON_LIST = [PIKACHU, RAICHU]
-const PisemonApp = () => {
+const Pisemon = () => {
 
   return (
     <div className="App">
@@ -37,4 +37,4 @@ const PisemonApp = () => {
   );
 }
 
-export default PisemonApp;
+export default Pisemon;
